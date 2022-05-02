@@ -7,6 +7,8 @@ import {
   ConsonantFullDiv,
   ConsonantPartDiv,
   ConsonantPartPartDiv,
+  ConsonantFourthDiv,
+  ConsonantFifthDiv,
 } from './FullKhmerAlphabet.elements'
 import { consonants } from '../letters/consonants'
 import { vowels } from '../letters/vowels'
@@ -16,57 +18,63 @@ const FullKhmerAlphabet = () => {
     <>
       <AlphabetArea>
         <ConsonantFullDiv>
-          <ConsonantPartDiv>
+          <ConsonantFourthDiv>
             <ConsonantPartPartDiv>
               <LargeText2>Consonant</LargeText2>
             </ConsonantPartPartDiv>
             <ConsonantPartPartDiv>
               <LargeText2>SubScript</LargeText2>
             </ConsonantPartPartDiv>
-          </ConsonantPartDiv>
-          <ConsonantPartDiv>
+          </ConsonantFourthDiv>
+          <ConsonantFourthDiv>
             <ConsonantPartPartDiv>
               <LargeText2>Romanization</LargeText2>
             </ConsonantPartPartDiv>
             <ConsonantPartPartDiv>
               <LargeText2>Phonetic</LargeText2>
             </ConsonantPartPartDiv>
-          </ConsonantPartDiv>
-          <ConsonantPartDiv>
+          </ConsonantFourthDiv>
+          <ConsonantFourthDiv>
             <ConsonantPartPartDiv>
               <LargeText2>Consonant Sound</LargeText2>
             </ConsonantPartPartDiv>
             <ConsonantPartPartDiv>
               <LargeText2>Phonetic</LargeText2>
             </ConsonantPartPartDiv>
-          </ConsonantPartDiv>
+          </ConsonantFourthDiv>
+          <ConsonantFifthDiv>
+            <LargeText2>Series</LargeText2>
+          </ConsonantFifthDiv>
         </ConsonantFullDiv>
         {consonants.map((item) => (
           <ConsonantFullDiv id={item.consonant} key={item.consonant}>
-            <ConsonantPartDiv>
+            <ConsonantFourthDiv>
               <ConsonantPartPartDiv>
                 <LargeText1>{item.consonant}</LargeText1>
               </ConsonantPartPartDiv>
               <ConsonantPartPartDiv>
                 <LargeText1Sub>{item.subscript}</LargeText1Sub>
               </ConsonantPartPartDiv>
-            </ConsonantPartDiv>
-            <ConsonantPartDiv>
+            </ConsonantFourthDiv>
+            <ConsonantFourthDiv>
               <ConsonantPartPartDiv>
                 <LargeText2>{item.fullValue}</LargeText2>
               </ConsonantPartPartDiv>
               <ConsonantPartPartDiv>
                 <LargeText2>{item.fullValueIpa}</LargeText2>
               </ConsonantPartPartDiv>
-            </ConsonantPartDiv>
-            <ConsonantPartDiv>
+            </ConsonantFourthDiv>
+            <ConsonantFourthDiv>
               <ConsonantPartPartDiv>
                 <LargeText2>{item.consonantValue}</LargeText2>
               </ConsonantPartPartDiv>
               <ConsonantPartPartDiv>
                 <LargeText2>{item.consonantValueIpa}</LargeText2>
               </ConsonantPartPartDiv>
-            </ConsonantPartDiv>
+            </ConsonantFourthDiv>
+            <ConsonantFifthDiv>
+              <LargeText2>{item.strong ? 'A' : 'O'}</LargeText2>
+            </ConsonantFifthDiv>
           </ConsonantFullDiv>
         ))}
         <ConsonantFullDiv>

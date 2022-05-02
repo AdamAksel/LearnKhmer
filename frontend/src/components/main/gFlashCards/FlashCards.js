@@ -42,6 +42,7 @@ const FlashCards = (props) => {
   }
 
   function checkAnswer(e) {
+    let repeat = false
     if (
       e.target.innerText === props.vowel[questionNumber].vowel ||
       e.target.innerText === props.consonant[questionNumber].consonant
@@ -55,13 +56,14 @@ const FlashCards = (props) => {
         e.target.style.color = '#141c3a'
         setShowAnswer(true)
         setTimeout(() => {
-          answerShuffle()
+          answerShuffle(repeat)
           if (lastTen === 9) {
             props.setScreen(1)
           }
         }, 1)
       }, 1000)
     } else {
+      repeat = true
       e.target.style.color = 'red'
       setShowAnswer(false)
       setPossible(possible + 1)
@@ -70,15 +72,16 @@ const FlashCards = (props) => {
         e.target.style.color = '#141c3a'
         setShowAnswer(true)
         setTimeout(() => {
-          answerShuffle()
+          answerShuffle(repeat)
         }, 1)
       }, 2000)
     }
   }
 
-  function answerShuffle() {
-    setQuestionNumber(Math.floor(Math.random() * 5))
-    console.log(questionNumber)
+  function answerShuffle(bool) {
+    if (!bool) {
+      setQuestionNumber(Math.floor(Math.random() * 5))
+    }
     let tempConsonantArray = testConsonants.slice()
     let tempVowelArray = testVowels.slice()
     tempConsonantArray[questionNumber] = shuffle(
@@ -87,10 +90,12 @@ const FlashCards = (props) => {
     tempVowelArray[questionNumber] = shuffle(tempVowelArray[questionNumber])
     setTestConsonants([...tempConsonantArray])
     setTestVowels([...tempVowelArray])
-    if (Math.random() > 0.5) {
-      setVowelOrConsonant(true)
-    } else {
-      setVowelOrConsonant(false)
+    if (!bool) {
+      if (Math.random() > 0.5) {
+        setVowelOrConsonant(true)
+      } else {
+        setVowelOrConsonant(false)
+      }
     }
   }
 

@@ -74,3 +74,11 @@ export const ColorDot = styled.div`
   width: 1vh;
   height: 1vh;
 `
+export const HeadlineDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 95%;
+`

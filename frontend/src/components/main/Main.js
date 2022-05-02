@@ -18,9 +18,11 @@ import {
   RightArrowDiv,
   LargeText2,
   ColorDot,
+  HeadlineDiv,
 } from './Main.elements'
 import { consonants } from './letters/consonants'
 import { vowels } from './letters/vowels'
+import { hints } from './letters/hints'
 import arrow from '../images/arrow.png'
 import play from '../images/play.png'
 import khmeralphabet from '../images/khmeralphabet.png'
@@ -33,7 +35,7 @@ import reset from '../images/reset.png'
 4. start rest of quiz
 
  to do
- 1. cheat button?
+
  2. refining
  3. hints at bottom
 */
@@ -471,7 +473,14 @@ const Main = () => {
             <FullKhmerAlphabet />
           </>
         ) : null}
-        <GrammarRuleArea></GrammarRuleArea>
+        <GrammarRuleArea>
+          <HeadlineDiv>
+            <LargeText2>{hints[screen].instruction}</LargeText2>
+          </HeadlineDiv>
+          <HeadlineDiv>
+            <LargeText2>{hints[screen].hint}</LargeText2>
+          </HeadlineDiv>
+        </GrammarRuleArea>
         <ButtonArea>
           <NavigationImage2
             src={play}

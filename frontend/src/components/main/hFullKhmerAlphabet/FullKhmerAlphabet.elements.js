@@ -58,3 +58,24 @@ export const ConsonantPartPartDiv = styled.div`
   width: 45%;
   margin: 1px;
 `
+export const ConsonantFourthDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90%;
+  width: 29%;
+
+  margin: 1px;
+`
+
+export const ConsonantFifthDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90%;
+  width: 12%;
+
+  margin: 1px;
+`
