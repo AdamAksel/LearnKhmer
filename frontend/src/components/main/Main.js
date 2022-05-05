@@ -8,6 +8,7 @@ import ConsonantsSubAndVowels from './fConsonantsSubAndVowels/ConsonantsSubAndVo
 import FlashCards from './gFlashCards/FlashCards'
 import FullKhmerAlphabet from './hFullKhmerAlphabet/FullKhmerAlphabet'
 import FiveVowels from './iFiveVowels/FiveVowels'
+import FullFlashCards from './jFullFlashCards/FullFlashCards'
 import {
   MainFlexbox,
   GrammarRuleArea,
@@ -15,6 +16,7 @@ import {
   NavigationImage,
   NavigationImage1,
   NavigationImage2,
+  NavigationImage3,
   RightArrowDiv,
   LargeText2,
   ColorDot,
@@ -27,6 +29,7 @@ import arrow from '../images/arrow.png'
 import play from '../images/play.png'
 import khmeralphabet from '../images/khmeralphabet.png'
 import reset from '../images/reset.png'
+import flash from '../images/flashcards.png'
 
 /*
 1. full alphabet with start button that "createconsonantarray"
@@ -472,6 +475,10 @@ const Main = () => {
           <>
             <FullKhmerAlphabet />
           </>
+        ) : screen === 8 ? (
+          <>
+            <FullFlashCards />
+          </>
         ) : null}
         <GrammarRuleArea>
           <HeadlineDiv>
@@ -484,7 +491,7 @@ const Main = () => {
         <ButtonArea>
           <NavigationImage2
             src={play}
-            hidden={screen === 7 ? false : true}
+            hidden={screen === 7 || screen === 8 ? false : true}
             onClick={() => createConsonantArray()}
           />
           <NavigationImage2
@@ -494,13 +501,17 @@ const Main = () => {
           />
           <NavigationImage2
             src={reset}
-            hidden={screen === 0 || screen === 7 ? true : false}
+            hidden={screen === 0 || screen === 7 || screen === 8 ? true : false}
             onClick={() => createConsonantArray()}
           />
 
           <NavigationImage1
             src={khmeralphabet}
             onClick={() => screenSetter(screen === 7 ? dotSetter : 7)}
+          />
+          <NavigationImage3
+            src={flash}
+            onClick={() => screenSetter(screen === 8 ? dotSetter : 8)}
           />
           <RightArrowDiv hidden={screen !== 0 ? true : false}>
             <NavigationImage
@@ -512,6 +523,7 @@ const Main = () => {
               }
               src={arrow}
             />
+
             <LargeText2 hidden={screen !== 0 ? true : false}>
               {changeVowelsNConsonants === 1 ? 'Consonants' : 'Vowels'}
             </LargeText2>

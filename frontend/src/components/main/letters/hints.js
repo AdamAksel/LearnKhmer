@@ -7,7 +7,7 @@
 
 export const hints = [
   {
-    hint: 'These are the five consonants and vowels you will practice. First you will memorize them with a guessing game and then see how they are combined into changing syllables.',
+    hint: 'These are the five consonants and vowels you will practice. First you will memorize them with a guessing game and then see how they are combined into syllables with other consonants, subconsonants and vowels.',
     instruction: 'Press Play to continue',
   },
   {
@@ -38,5 +38,9 @@ export const hints = [
     hint: null,
     instruction:
       'Here are the consonants and dependent vowels of the Khmer alphabet, អក្សរខ្មែរ means "Khmer script"',
+  },
+  {
+    hint: null,
+    instruction: null,
   },
 ]

@@ -21,12 +21,14 @@ export const ButtonArea = styled.div`
 export const GrammarRuleArea = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   height: 13%;
   width: 80%;
   margin: 1px;
   border: 1px solid black;
   border-radius: 20px;
+  text-align: center;
 `
 
 export const NavigationImage = styled.img`
@@ -51,6 +53,14 @@ export const NavigationImage2 = styled.img`
   left: 5vw;
   top: 35vh;
   transform: translate(-50%, 0);
+`
+export const NavigationImage3 = styled.img`
+  width: 3.5vw;
+  height: auto;
+  position: absolute;
+  left: 5vw;
+  top: 52vh;
+  transform: translate(-60%, 0);
 `
 
 export const RightArrowDiv = styled.div`
