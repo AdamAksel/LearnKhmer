@@ -45,6 +45,10 @@ export const NavigationImage1 = styled.img`
   left: 5vw;
   top: 45vh;
   transform: translate(-50%, 0);
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 `
 export const NavigationImage2 = styled.img`
   width: 3.5vw;
@@ -53,6 +57,10 @@ export const NavigationImage2 = styled.img`
   left: 5vw;
   top: 35vh;
   transform: translate(-50%, 0);
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 `
 export const NavigationImage3 = styled.img`
   width: 3.5vw;
@@ -61,6 +69,10 @@ export const NavigationImage3 = styled.img`
   left: 5vw;
   top: 52vh;
   transform: translate(-60%, 0);
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 `
 
 export const RightArrowDiv = styled.div`
@@ -73,6 +85,10 @@ export const RightArrowDiv = styled.div`
   width: 5vw;
   height: auto;
   text-align: center;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 `
 
 export const LargeText2 = styled.h1`

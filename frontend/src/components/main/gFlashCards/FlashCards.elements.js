@@ -93,4 +93,8 @@ export const HeadlineDiv = styled.div`
 export const NavigationImage2 = styled.img`
   width: 3.5vw;
   height: auto;
+
+  &:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
 `
