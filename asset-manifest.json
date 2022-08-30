@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/LearnKhmer/static/css/main.e6c13ad2.css",
+    "main.js": "/LearnKhmer/static/js/main.2862631b.js",
+    "static/js/787.cda612ba.chunk.js": "/LearnKhmer/static/js/787.cda612ba.chunk.js",
+    "static/media/reset.png": "/LearnKhmer/static/media/reset.39653192fa648d357e96.png",
+    "static/media/arrow.png": "/LearnKhmer/static/media/arrow.e61ed316eaab241acd61.png",
+    "static/media/angkor2.png": "/LearnKhmer/static/media/angkor2.ce99b95bf7faac5e1c5e.png",
+    "static/media/flashcards.png": "/LearnKhmer/static/media/flashcards.70b27874ded402582c1a.png",
+    "static/media/play.png": "/LearnKhmer/static/media/play.8ca2fc77b581e5bce743.png",
+    "static/media/khmeralphabet.png": "/LearnKhmer/static/media/khmeralphabet.b62b3f76c8536295a906.png",
+    "index.html": "/LearnKhmer/index.html",
+    "main.e6c13ad2.css.map": "/LearnKhmer/static/css/main.e6c13ad2.css.map",
+    "main.2862631b.js.map": "/LearnKhmer/static/js/main.2862631b.js.map",
+    "787.cda612ba.chunk.js.map": "/LearnKhmer/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.2862631b.js"
+  ]
+}
