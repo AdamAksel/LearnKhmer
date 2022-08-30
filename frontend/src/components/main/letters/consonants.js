@@ -196,7 +196,7 @@ export const consonants = [
     subscript: '្ប',
     fullValue: 'ba',
     fullValueIpa: '[ɓɑː]',
-    consonantValue: 'p',
+    consonantValue: 'b',
     consonantValueIpa: '[p]',
     strong: true,
   },
